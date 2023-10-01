@@ -1,0 +1,15 @@
+name: testenv
+
+on:
+  push:
+    branches: [ "main" ]   
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    environment: developmentenv
+    continue-on-error: false   
+   
+    container: 
+      image: kirankumarsivapuram/base_image:3.0       
