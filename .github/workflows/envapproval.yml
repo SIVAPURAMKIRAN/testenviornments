@@ -12,4 +12,6 @@ jobs:
     continue-on-error: false   
    
     container: 
-      image: kirankumarsivapuram/base_image:3.0       
+      image: kirankumarsivapuram/base_image:3.0 
+    steps:
+    - uses: actions/checkout@v3
